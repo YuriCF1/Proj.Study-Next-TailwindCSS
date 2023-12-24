@@ -15,6 +15,7 @@ const button = ({ children, className }: ButtonProps) => {
             px-[32px]
             py-[12px]
             minhas-estilizacoes
+            text-white
         ${className}`}>
             {children}
         </button>
