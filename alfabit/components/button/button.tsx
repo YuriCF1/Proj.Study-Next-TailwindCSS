@@ -1,12 +1,12 @@
 import React from "react"
 
-type ButtonProps = {
+export type ButtonProps = {
     children: React.ReactNode
 } & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 // const button = (props: ButtonProps) => {
 // Colocando o className para que algúem possa injetar qualquer classe
-const button = ({ children, className }: ButtonProps) => {
+const Button = ({ children, className }: ButtonProps) => {
     return (
         // <button>{props.children}</button>
         <>
@@ -31,4 +31,4 @@ const button = ({ children, className }: ButtonProps) => {
     )
 }
 
-export default button
+export default Button
