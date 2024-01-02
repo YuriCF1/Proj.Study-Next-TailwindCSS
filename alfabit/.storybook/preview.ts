@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react";
 
+// Importando temas dos componentes para o servidor do storybook
 import '../styles/globals.css'
 
 const preview: Preview = {
