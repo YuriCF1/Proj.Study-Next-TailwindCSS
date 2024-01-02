@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: { //O que estiver no extend, vai usar as cores padrão e vai extender, adicionando novas
         // example: "#f58912"
+        primary: 'var(--primaryColor)',
         example: 'var(--example)',
         example2: 'var(--example2)'
       },
