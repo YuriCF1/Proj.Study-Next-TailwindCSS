@@ -9,15 +9,18 @@ export type ButtonProps = {
 const Button = ({ children, className }: ButtonProps) => {
     return (
         // <button>{props.children}</button>
+        // bg-[#2D5BFF] = Valores arbitrários. Valores que não estão definidos como tokens/configurações padrão do tailwind
+        // bg-[#2D5BFF] = bg-primary
         <>
             <button
                 className={`
             minhas-estilizacoes
-            bg-[#2D5BFF]
+            bg-primary
             rounded-[8px] 
             px-[32px]
             py-[12px]
             text-white
+            theme-violet
             ${className}`}>
                 {children}
             </button>
