@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Variáveis */
+/* Definindo a camada base */
+@layer base {
+  /* Quando não tiver nenhuma classe do tema, será pego o padrão */
+  :root {
+    --primaryColor: #2d5bff;
+  }
+
+  .theme-violet {
+    --primaryColor: #af4bfe;
+  }
+}
 
 /* Exemplo de declaração de variáveis */
 /* :root {
