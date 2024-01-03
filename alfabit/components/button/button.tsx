@@ -9,18 +9,28 @@ export type ButtonProps = {
 const Button = ({ children, className }: ButtonProps) => {
     return (
         // <button>{props.children}</button>
+
+        // MANEIRAS DE DECLARAR AS CLASSES
         // bg-[#2D5BFF] = Valores arbitrários. Valores que não estão definidos como tokens/configurações padrão do tailwind
         // bg-[#2D5BFF] = bg-primary
+        // theme-violet
+
+        // Quando se tem a cor padrão, a opacidade é aplicada
+        // bg-blue-500
+        // bg-opacity-50
+
+        // Tem várias formas de consertar.
+        //Verificar o tailwind.config e ver que dá pra transformar a classe em função
         <>
             <button
                 className={`
             minhas-estilizacoes
-            bg-primary
+            bg-primaryOpacity
+            bg-opacity-50
             rounded-[8px] 
             px-[32px]
             py-[12px]
             text-white
-            theme-violet
             ${className}`}>
                 {children}
             </button>
