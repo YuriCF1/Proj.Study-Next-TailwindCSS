@@ -22,5 +22,12 @@ export const Primary: StoryObj<ButtonProps> = {
     args: {
         children: 'Botao'
     }
+
 }
 
+export const Violet: StoryObj<ButtonProps> = {
+    args: {
+        children: 'Botao',
+        className: 'theme-violet'
+    }
+}
