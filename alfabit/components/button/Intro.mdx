@@ -1,4 +1,4 @@
-import { Meta, Primary, Controls } from "@storybook/blocks";
+import { Meta, Primary, Controls, Canvas } from "@storybook/blocks";
 
 import * as Story from "./Button.stories.ts";
 
@@ -10,8 +10,11 @@ import * as Story from "./Button.stories.ts";
 
 Componente do botão padrão
 
+{/* Primary é um bloco que tá pegando o botao sem variação */}
 <Primary />
 
-{/* Coloca as variáveis e exemplifica mudanças */}
+{/* Canvas dá story de variavaçõ, dando a prorpriedade of, de onde é ssa variação */}
+<Canvas of={Story.Violet}/>
 
+{/* Coloca as variáveis e exemplifica mudanças */}
 <Controls />
