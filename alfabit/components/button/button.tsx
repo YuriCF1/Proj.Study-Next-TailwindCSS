@@ -21,16 +21,21 @@ const Button = ({ children, className }: ButtonProps) => {
 
         // Tem várias formas de consertar.
         //Verificar o tailwind.config e ver que dá pra transformar a classe em função
+
+        // Vairáveis de tipografia 
+        // py-[12px] = px-2xs = 12px (variável colocada no config, dá o valor nas sugestões clicando Ctrl Espaço. Por conta do comentário)
+        // rounded-[8px] = rounded-md
         <>
             <button
                 className={`
             minhas-estilizacoes
             bg-primaryOpacity
             bg-opacity-50
-            rounded-[8px] 
-            px-[32px]
-            py-[12px]
+            rounded-md
+            px-6
+            py-2
             text-white
+            tablet:text-sm
             ${className}`}>
                 {children}
             </button>
