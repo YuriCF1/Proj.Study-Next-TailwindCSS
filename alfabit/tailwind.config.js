@@ -13,6 +13,11 @@ module.exports = {
   theme: {
     // colors: { //Tudo dentro de theme, sobrescreve. Exemplo:^Vai sobrescrever as cores do tailwind
     // },
+
+    // ISSO ABAIXO NÃO FOI NECENSSÁRIO, MAS FOI SOLICITADO
+    fontFamily: {
+      mulish: "Mulish, sans-serif",
+    },
     screens: {
       mobile: "var(--screen-mobile)",
       tablet: "var(--screen-tablet)",
@@ -41,18 +46,30 @@ module.exports = {
       8: "var(--spacing-2xl) /* 48px */",
       9: "var(--spacing-4xl) /* 56px */",
     },
-    
+
     borderRadius: {
       none: "var(--border-radius-none)",
       sm: "var(--border-radius-sm)",
       md: "var(--border-radius-md)",
       lg: "var(--border-radius-lg)",
     },
+
+    fontSize: {
+      xs: "var(--font-xs)",
+      sm: "var(--font-sm)",
+      md: "var(--font-md)",
+      lg: "var(--font-lg)",
+      xl: "var(--font-xl)",
+    },
+
     extend: {
       colors: {
         //O que estiver no extend, vai usar as cores padrão e vai extender, adicionando novas
         // example: "#f58912"
-        primary: "var(--primaryColor)",
+
+        // A função para pegar a opacidade, se torna DESNECESSÁRIA, UTILIZANDO O PLACEHOLDER DO TAILWIND: <alpha-value>
+        // primary: "var(--primaryColor)",
+        primary: 'rgba(var(--primary), <alpha-value>)',
         primaryOpacity: ({ opacityValue }) =>
           `rgba(var(--primaryColorOpacity), ${opacityValue})`,
 
