@@ -29,13 +29,13 @@ const Button = ({ children, className }: ButtonProps) => {
             <button
                 className={`
             minhas-estilizacoes
-            bg-primaryOpacity
+            bg-primary
             bg-opacity-50
             rounded-md
             px-6
             py-2
             text-white
-            tablet:text-sm
+            text-xs
             ${className}`}>
                 {children}
             </button>
