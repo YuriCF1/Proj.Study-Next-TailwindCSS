@@ -87,6 +87,7 @@
 
   .theme-violet {
     --primaryColorOpacity: 175, 75, 254;
+    --primary: 175, 75, 254;
     --secondary: 190, 116, 249;
     --tertiary: 226, 189, 255;
     --quaternary: 245, 232, 255;
