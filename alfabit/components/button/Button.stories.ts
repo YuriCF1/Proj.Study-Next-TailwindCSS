@@ -10,7 +10,17 @@ const meta: Meta<ButtonProps> = {
     title: 'Molecules/Button',
     // tags: ['autodocs'], //Dizendo que quero uma documentação autogerada. Colaborando com a tag autodoc no arqv main.ts
     component: Button,
-    argTypes: {}
+    argTypes: {
+        children: {
+            type: "string",
+        },
+        disabled: {
+            type: "boolean"
+        },
+        className: {
+            type: "string"
+        }
+    }
 }
 
 export default meta;
@@ -27,7 +37,7 @@ export const Primary: StoryObj<ButtonProps> = {
 
 export const Violet: StoryObj<ButtonProps> = {
     args: {
-        children: 'Botao',
+        children: 'Botão',
         className: 'theme-violet'
     }
 }
