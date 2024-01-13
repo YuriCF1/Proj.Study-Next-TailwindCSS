@@ -69,7 +69,7 @@ module.exports = {
 
         // A função para pegar a opacidade, se torna DESNECESSÁRIA, UTILIZANDO O PLACEHOLDER DO TAILWIND: <alpha-value>
         // primary: "var(--primaryColor)",
-        primary: 'rgba(var(--primary), <alpha-value>)',
+        primary: "rgba(var(--primary), <alpha-value>)",
         primaryOpacity: ({ opacityValue }) =>
           `rgba(var(--primaryColorOpacity), ${opacityValue})`,
 
@@ -91,16 +91,33 @@ module.exports = {
         icon: toRgba("--icon"),
         outline: toRgba("--outline"),
         divider: toRgba("--divider"),
-        "bg-light": toRgba("--bg-light"),
-        "bg-dark": toRgba("--bg-dark"),
-        "bg-disabled": toRgba("--bg-disabled"),
-        "text-primary": toRgba("--text-primary"),
-        "text-secondary": toRgba("--text-secondary"),
-        "text-tertiary": toRgba("--text-tertiary"),
-        "text-disabled": toRgba("--text-disabled"),
+        // "bg-light": toRgba("--bg-light"),
+        // "bg-dark": toRgba("--bg-dark"),
+        // "bg-disabled": toRgba("--bg-disabled"),
+        // "text-primary": toRgba("--text-primary"),
+        // "text-secondary": toRgba("--text-secondary"),
+        // "text-tertiary": toRgba("--text-tertiary"),
+        // "text-disabled": toRgba("--text-disabled"),
+
+        // "text-disabled": toRgba("--text-disabled"),
 
         example: "var(--example)",
         example2: "var(--example2)",
+      },
+
+      backgroundColor: {
+        light: toRgba("--bg-light"),
+        dark: toRgba("--bg-dark"),
+        disabled: toRgba("--bg-disabled"),
+      },
+      textColor: {
+        // Criando um bloco novo para não confundir com as cores primary... padrões no bloco "colors"
+        gray: {
+          primary: toRgba("--text-primary"),
+          secondary: toRgba("--text-secondary"),
+          tertiary: toRgba("--text-tertiary"),
+          disabled: toRgba("--text-disabled"),
+        },
       },
       // backgroundImage: {
       //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
