@@ -8,7 +8,7 @@ export type ButtonProps = {
 // Colocando o className para que algúem possa injetar qualquer classe
 // ...rest = resto das propriedades
 const Button = ({ children, className, disabled, ...rest }: ButtonProps) => {
-    const generalStyles = 'rounded-md px-6 py-2'
+    const generalStyles = 'rounded-md px-6 py-2 font-xl'
     const Btn = (classes: string) => {
         return <button
             className={`${generalStyles} ${classes} ${className}`}
@@ -17,7 +17,7 @@ const Button = ({ children, className, disabled, ...rest }: ButtonProps) => {
             {children}
         </button>
     }
-    return Btn(disabled ? 'bg-bg-disabled text-text-disabled' : 'bg-primary text-white')
+    return Btn(disabled ? 'bg-disabled text-disabled' : 'bg-primary text-white')
     // <button>{props.children}</button>
 
     // MANEIRAS DE DECLARAR AS CLASSES
