@@ -4,17 +4,36 @@ import * as Story from "./Button.stories.ts";
 
 {/* Fazendo um link direto via código */}
 
+{/* Falando qual a referência da documentação */}
+
 <Meta of={Story} />
 
 # Botão
 
 Componente do botão padrão
 
+{/* Canvas dá story de variação, dando a prorpriedade of, de onde é ssa variação */}
+
+{/* <Canvas of={Story.Violet} /> */}
+
+### Primário
+<Canvas of={Story.Primary} />
+### Desabilitado
+<Canvas of={Story.Disabled} />
+### Secundário
+<Canvas of={Story.Secondary} />
+### Secundário Desabilitado
+<Canvas of={Story.SecondaryDisabled} />
+### Tema Violeta
+<Canvas of={Story.Violet} />
+### Tema Violeta Secundário
+<Canvas of={Story.VioletSecondary} />
+
+
+## Documentação interativa
+
 {/* Primary é um bloco que tá pegando o botao sem variação */}
 <Primary />
-
-{/* Canvas dá story de variavaçõ, dando a prorpriedade of, de onde é ssa variação */}
-<Canvas of={Story.Violet}/>
 
 {/* Coloca as variáveis e exemplifica mudanças */}
 <Controls />
