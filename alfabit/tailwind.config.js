@@ -103,6 +103,8 @@ module.exports = {
 
         example: "var(--example)",
         example2: "var(--example2)",
+
+        disabled: toRgba("--text-disabled"),
       },
 
       backgroundColor: {
@@ -116,7 +118,7 @@ module.exports = {
           primary: toRgba("--text-primary"),
           secondary: toRgba("--text-secondary"),
           tertiary: toRgba("--text-tertiary"),
-          disabled: toRgba("--text-disabled"),
+          // disabled: toRgba("--text-disabled"), //ELEVANDO O CONTEXTO DA COR
         },
       },
       // backgroundImage: {
